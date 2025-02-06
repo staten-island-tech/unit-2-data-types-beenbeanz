@@ -24,13 +24,47 @@ animal = input("input an animal\n")
 Madlib = f"One day, {celebrity} was {verb1} their {animal}. The {animal} had {number} friends of the same species, and they suddenly {verb2} at {celebrity}. However, {celebrity} had a {noun} in their bag, and attacked the animals. The {animal}s ran away from fright."
 print(Madlib)"""
 
-def oddOrEven():
-    number = input("Enter a number\n")
-    int(number)
-    number = number % 2
+"""def oddOrEven():
+    number = int(input("Enter a number\n")) % 2
     if (number == 0):
         print("That is an even number")
     elif (number == 1):
         print("That is an odd number")
-oddOrEven()
+oddOrEven()"""
 
+"""def tip(serviceLevel):
+    if serviceLevel == "bad":
+        print("You get a 0% tip")
+    elif serviceLevel == "okay":
+        print("You get a 15% tip")
+    elif serviceLevel == "good":
+        print("You get a 20% tip")
+    elif serviceLevel == "great":
+        print("You get a 25% tip")
+tip("good")"""
+
+"""def factors(num):
+    factors = []
+    for i in range(1, num):
+        if num % i == 0:
+            factors.append(i)
+    return factors
+print(factors(69))"""
+
+def GCF(num1, num2):
+    factors1 = []
+    factors2 = []
+    commonFactors = []
+    for i in range(1, num1 + 1):
+        if num1 % i == 0:
+            factors1.append(i)
+    for j in range(1, num2 + 1):
+        if num2 % j == 0:
+            factors2.append(j)
+    for k in range(len(factors1)):
+        for l in range(len(factors2)):
+            if factors1[k] == factors2[l]:
+                commonFactors.append(factors2[l])
+    gcf = max(commonFactors)
+    return gcf
+print(GCF(2000, 1000))
