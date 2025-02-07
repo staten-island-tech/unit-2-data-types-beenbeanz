@@ -33,6 +33,7 @@ print(Madlib)"""
     elif (number == 1):
         print("That is an odd number")
 oddOrEven()"""
+<<<<<<< HEAD
 
 """def tip(bill):
     if bill == "bad":
@@ -96,4 +97,42 @@ def tipCalculator():
     totalAmtPaid = (bill * (tip / 100)) + bill
     print(f"You spent a total of ${totalAmtPaid}.")
 tipCalculator()
+=======
+>>>>>>> dc1672f2da6989da30eaef196554a0dc19f1bedf
 
+"""def tip(serviceLevel):
+    if serviceLevel == "bad":
+        print("You get a 0% tip")
+    elif serviceLevel == "okay":
+        print("You get a 15% tip")
+    elif serviceLevel == "good":
+        print("You get a 20% tip")
+    elif serviceLevel == "great":
+        print("You get a 25% tip")
+tip("good")"""
+
+"""def factors(num):
+    factors = []
+    for i in range(1, num):
+        if num % i == 0:
+            factors.append(i)
+    return factors
+print(factors(69))"""
+
+def GCF(num1, num2):
+    factors1 = []
+    factors2 = []
+    commonFactors = []
+    for i in range(1, num1 + 1):
+        if num1 % i == 0:
+            factors1.append(i)
+    for j in range(1, num2 + 1):
+        if num2 % j == 0:
+            factors2.append(j)
+    for k in range(len(factors1)):
+        for l in range(len(factors2)):
+            if factors1[k] == factors2[l]:
+                commonFactors.append(factors2[l])
+    gcf = max(commonFactors)
+    return gcf
+print(GCF(2000, 1000))
