@@ -71,7 +71,7 @@ print(factors(12))"""
     return gcf
 print(GCF(2000, 1000))"""
 
-def numberGuessing():
+"""def numberGuessing():
     guess_history = []
     guess = 0
     randomNum = random.randint(1, 10)
@@ -88,4 +88,12 @@ def numberGuessing():
     print("Guess history:")
     for i in range(len(guess_history)):
         print(guess_history[i])
-numberGuessing()
+numberGuessing()"""
+
+def tipCalculator():
+    bill = float(input("How much was the bill?\n"))
+    tip = int(input("How much was the tip?\n"))
+    totalAmtPaid = (bill * (tip / 100)) + bill
+    print(f"You spent a total of ${totalAmtPaid}.")
+tipCalculator()
+
